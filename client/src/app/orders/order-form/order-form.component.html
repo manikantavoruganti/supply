@@ -1,0 +1,59 @@
+<form class="row" [formGroup]="order_service.orderForm"  
+(submit)="onSubmit()" [class.submitted]="submitted">
+    <!-- <div class="col-10 mb-3">
+        <label for="" class="form-label">#</label>
+        <input class="form-control form-control-lg" placeholder="product name"
+        formControlName="_id">
+    </div> -->
+    <div class="col-10 mb-3">
+        <label for="" class="form-label">PRODUCT</label>
+        <input class="form-control form-control-lg" placeholder="product name"
+        formControlName="product">
+    </div>
+    <div class="col-10 mb-3">
+        <label for="" class="form-label">QUANTITY</label>
+        <input class="form-control form-control-lg" placeholder="amount ordered"
+        formControlName="quantity">
+    </div>
+    <div class="col-10 mb-3">
+        <label for="" class="form-label">TOTAL PRICE</label>
+        <input class="form-control form-control-lg" placeholder="amount for all ordered products"
+        formControlName="totalPrice">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">CUSTOMER NAME</label>
+        <input class="form-control form-control-lg" placeholder="customer's full name"
+        formControlName="customerName">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">PHONE NO</label>
+        <input class="form-control form-control-lg" placeholder="customer's mobile or phone no"
+        formControlName="phoneNo">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">CUSTOMER ADDRESS</label>
+        <input class="form-control form-control-lg" placeholder=" customer location"
+        formControlName="address">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">ORDER DATE</label>
+        <input class="form-control form-control-lg" placeholder="date ordered"
+        formControlName="orderDate">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">ORDER STATUS</label>
+        <input class="form-control form-control-lg" placeholder="in transit/in store/waiting"
+        formControlName="orderStatus">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">PAID</label>
+        <input class="form-control form-control-lg" placeholder="true/false"
+        formControlName="paymentStatus">
+    </div>
+    <div class="col-10 d-grid">
+        <button class="btn btn-lg btn-primary" type="submit">SUBMIT</button>
+
+    </div>
+
+
+</form>

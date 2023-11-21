@@ -1,0 +1,47 @@
+<div class="text-bg-dark text-center rounded-bottom py-4">
+    <h1 class="display-4">
+        Supplier Register
+    </h1>
+</div>
+<div class="p-4">
+    <div class="row">
+        <div class="col-md-6">
+            <app-supplier-form>
+
+            </app-supplier-form>
+        </div>
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>BRAND</th>
+                        <th>PRODUCT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let sup of service.list">
+                      
+                        <td (click)="populateForm(sup)"> {{sup.name}}</td>
+                        <td (click)="populateForm(sup)"> {{sup.productSupplied}}</td>
+                        <td (click)="populateForm(sup)"> {{sup.address}}</td>
+                        <td>
+                            <i class="far fa-trash-alt fa-lg text-secondary"  (click)="onDelete(sup._id)"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFaXNvUSNlqQoqlNBgCgppWcSeYxb5kDM"></script>
+
+
+<google-map height="400px"
+            width="750px"
+            [center]="center"
+            [zoom]="zoom"
+            (mapClick)="addMarker($event)">
+  <map-marker *ngFor="let markerPosition of markerPositions"
+              [position]="markerPosition"
+              [options]="markerOptions"></map-marker>
+</google-map>
+      </div>
+    </div>
+</div>

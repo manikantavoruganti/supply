@@ -1,0 +1,50 @@
+<form class="row" [formGroup]="inventory_service.inventoryForm"  
+(submit)="onSubmit()" [class.submitted]="submitted">
+
+    <div class="col-10 mb-3">
+        <label for="" class="form-label">PRODDUCT NAME</label>
+        <input class="form-control form-control-lg" placeholder="product name"
+        formControlName="productName">
+    </div>
+    <div class="col-10 mb-3">
+        <label for="" class="form-label">DESCRIPTION</label>
+        <input class="form-control form-control-lg" placeholder="What type of product?"
+        formControlName="description">
+    </div>
+    <div class="col-10 mb-3">
+        <label for="" class="form-label">QUANTITY</label>
+        <input class="form-control form-control-lg" placeholder="amount in store"
+        formControlName="quantity">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">PRICE</label>
+        <input class="form-control form-control-lg" placeholder="cost per item"
+        formControlName="price">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">SUPPLIER</label>
+        <input class="form-control form-control-lg" placeholder="supplying company"
+        formControlName="supplierName">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">DATE MANUFACTURED</label>
+        <input class="form-control form-control-lg" placeholder="when was it made"
+        formControlName="manufacturingDate">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">EXPIRY DATE</label>
+        <input class="form-control form-control-lg" placeholder="expiry"
+        formControlName="expiryDate">
+    </div>
+    <div class="col-5 mb-3">
+        <label for="" class="form-label">LOCATION IT'S STORED</label>
+        <input class="form-control form-control-lg" placeholder="which warehouse has it?"
+        formControlName="location">
+    </div>
+    <div class="col-10 d-grid">
+        <button class="btn btn-lg btn-primary" type="submit">SUBMIT</button>
+
+    </div>
+
+
+</form>
