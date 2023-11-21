@@ -10,7 +10,7 @@ export class SupplierService {
 
   constructor(private fb:FormBuilder, private http: HttpClient) { }
   
-  readonly baseURL = 'http://localhost:3000/api/suppliers/';
+  readonly baseURL = 'https://store-management-system-y5ye.onrender.com';
   list: Supplier[] = [];
 
     supplierForm = this.fb.group({
