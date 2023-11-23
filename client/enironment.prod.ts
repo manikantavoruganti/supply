@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseURL: 'https://avatar-app.onrender.com/api',
+  baseURL: 'https://store-management-system-y5ye.onrender.com/api',
 };
