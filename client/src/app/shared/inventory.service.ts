@@ -11,7 +11,7 @@ export class InventoryService {
 
   constructor(private fb:FormBuilder, private http: HttpClient) { }
   
-  readonly baseURL = 'https://store-management-system-y5ye.onrender.com';
+  readonly baseURL = 'https://store-management-system-y5ye.onrender.com/api';
   list: Inventory[] = [];
 
     inventoryForm = this.fb.group({
