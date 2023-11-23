@@ -39,19 +39,7 @@
                   "maximumWarning": "500kb",
                   "maximumError": "1mb"
                 },
-                {
-                  "type": "any",
-                  "name": "bundle.js",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                }
               ]
-
-               {
-                  "glob": "_redirects",
-                  "input": "src",
-                  "output": "/"
-                },
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
