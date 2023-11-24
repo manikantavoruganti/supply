@@ -13,7 +13,7 @@ const app = express();
 
 //middleware
 app.use(bodyParser.json());
-app.use(cors({origin: 'http://localhost:4200'}))
+app.use(cors({origin: 'https://main--supplychainmanagement.netlify.app/'}))
 app.use('/api/suppliers', supplierRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
