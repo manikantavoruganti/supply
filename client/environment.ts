@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseURL: 'https://store-management-system-y5ye.onrender.com/api',
+  baseURL: 'https://store-management-system-y5ye.onrender.com/api:splat',
 };
 
 /*
