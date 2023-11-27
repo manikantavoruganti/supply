@@ -24,7 +24,10 @@ app.use(errorHandler);
 connectDb()
 .then(() => {
     console.log('db connection succeeded')
-    app.listen(3000, () => console.log('server started at port 3000'));
+
+    // Use process.env.PORT or a default port like 3000 if not provided
+    const port = process.env.PORT || 3000;
+    app.listen(port, () => console.log('server started at port ${port}'));
 
 })
 .catch(err=>console.log(err));
