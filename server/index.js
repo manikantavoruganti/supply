@@ -13,7 +13,19 @@ const app = express();
 
 //middleware
 app.use(bodyParser.json());
-app.use(cors({origin: 'https://main--supplychainmanagement.netlify.app/'}))
+app.use(cors({origin: 'https://main--supplychainmanagement.netlify.app/'}));
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header(
+        "Access-Control-Allow-Methods",
+        "GET,HEAD,OPTIONS,POST,PUT,DELETE"
+    );
+    res.header(
+        "Access-Control-Allow-Headers",
+        "Origin, X-Requested-With, Content-Type, Accept,Authorization"
+    );
+    next();
+})
 app.use('/api/suppliers', supplierRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
