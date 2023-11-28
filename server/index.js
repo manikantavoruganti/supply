@@ -5,10 +5,10 @@ const cors = require('cors');
 //local imports
 const connectDb = require('./db.js');
 const supplierRoutes = require('./controllers/supplier_controller');
-const productRoutes = require('./controllers/product_controller')
-const orderRoutes = require('./controllers/order_controller')
-const inventoryRoutes = require('./controllers/inventory_controller')
-const { errorHandler } = require('./middlewares')
+const productRoutes = require('./controllers/product_controller');
+const orderRoutes = require('./controllers/order_controller');
+const inventoryRoutes = require('./controllers/inventory_controller');
+const { errorHandler } = require('./middlewares');
 const app = express();
 
 //middleware
@@ -36,8 +36,11 @@ app.use(errorHandler);
 connectDb()
 .then(() => {
     console.log('db connection succeeded')
+     const port = process.env.PORT || 3000;
 
-    app.listen(3000, () => console.log('server started at port 3000'));
+    app.listen(port, () => console.log(`Server started at port ${port}`));
+
+    // app.listen(3000, () => console.log('server started at port 3000'));
 
 })
 .catch(err=>console.log(err));
