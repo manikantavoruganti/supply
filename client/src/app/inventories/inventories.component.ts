@@ -37,8 +37,8 @@ export class InventoriesComponent {
     if (confirm('Are you sure to delete this record?')) {
       this.inventory_service.deleteInventory(_id).subscribe(res => {
         this.inventory_service.fetchInventoryList();
-        this.toastr.info('Deleted successfully', 'Order Register')
-      })
+        this.toastr.info('Deleted successfully', 'Inventory Register');
+      });
     }
   }
 }
