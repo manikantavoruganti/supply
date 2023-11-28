@@ -1,34 +1,26 @@
 <form class="row" [formGroup]="supplier_service.supplierForm"
 (submit)="onSubmit()" [class.submitted]="submitted">
-    <div class="col-10 mb-3">
-        <label for="" class="form-label">Full Name</label>
-        <input class="form-control form-control-lg" placeholder="brand Name"
-        formControlName="name">
+   <div class="col-10 mb-3">
+        <label for="supplierName" class="form-label">Full Name</label>
+        <input id="supplierName" class="form-control form-control-lg" placeholder="Supplier Name" formControlName="name">
     </div>
     <div class="col-10 mb-3">
-        <label for="" class="form-label">Contact Person</label>
-        <input class="form-control form-control-lg" placeholder="contact person's name"
-        formControlName="contactPerson">
+        <label for="contactPerson" class="form-label">Contact Person</label>
+        <input id="contactPerson" class="form-control form-control-lg" placeholder="Contact person's name" formControlName="contactPerson">
     </div>
     <div class="col-10 mb-3">
-        <label for="" class="form-label">Contact</label>
-        <input class="form-control form-control-lg" placeholder="phone number"
-        formControlName="phone_No">
+        <label for="phoneNumber" class="form-label">Contact</label>
+        <input id="phoneNumber" class="form-control form-control-lg" placeholder="Phone number" formControlName="phone_No">
     </div>
     <div class="col-5 mb-3">
-        <label for="" class="form-label">Location</label>
-        <input class="form-control form-control-lg" placeholder="address"
-        formControlName="address">
+        <label for="supplierAddress" class="form-label">Location</label>
+        <input id="supplierAddress" class="form-control form-control-lg" placeholder="Address" formControlName="address">
     </div>
     <div class="col-5 mb-3">
-        <label for="" class="form-label">Type of Product</label>
-        <input class="form-control form-control-lg" placeholder="product"
-        formControlName="productSupplied">
+        <label for="productSupplied" class="form-label">Type of Product</label>
+        <input id="productSupplied" class="form-control form-control-lg" placeholder="Product" formControlName="productSupplied">
     </div>
     <div class="col-10 d-grid">
         <button class="btn btn-lg btn-primary" type="submit">Submit</button>
-
     </div>
-
-
 </form>
