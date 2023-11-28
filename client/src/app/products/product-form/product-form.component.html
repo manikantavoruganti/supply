@@ -1,34 +1,26 @@
 <form class="row" [formGroup]="service.productForm"  
 (submit)="onSubmit()" [class.submitted]="submitted">
-    <div class="col-10 mb-3">
-        <label for="" class="form-label">Product</label>
-        <input class="form-control form-control-lg" placeholder="product name"
-        formControlName="name">
+<div class="col-10 mb-3">
+        <label for="productName" class="form-label">Product</label>
+        <input id="productName" class="form-control form-control-lg" placeholder="Product name" formControlName="name">
     </div>
     <div class="col-10 mb-3">
-        <label for="" class="form-label">Description</label>
-        <input class="form-control form-control-lg" placeholder="color and type"
-        formControlName="description">
+        <label for="productDescription" class="form-label">Description</label>
+        <input id="productDescription" class="form-control form-control-lg" placeholder="Color and type" formControlName="description">
     </div>
     <div class="col-10 mb-3">
-        <label for="" class="form-label">Brand</label>
-        <input class="form-control form-control-lg" placeholder="brand name"
-        formControlName="company">
+        <label for="productBrand" class="form-label">Brand</label>
+        <input id="productBrand" class="form-control form-control-lg" placeholder="Brand name" formControlName="company">
     </div>
     <div class="col-5 mb-3">
-        <label for="" class="form-label">Price</label>
-        <input class="form-control form-control-lg" placeholder="price is in dollars"
-        formControlName="price">
+        <label for="productPrice" class="form-label">Price</label>
+        <input id="productPrice" class="form-control form-control-lg" placeholder="Price is in dollars" formControlName="price">
     </div>
     <div class="col-5 mb-3">
-        <label for="" class="form-label">Quantity</label>
-        <input class="form-control form-control-lg" placeholder="quantity"
-        formControlName="quantity">
+        <label for="productQuantity" class="form-label">Quantity</label>
+        <input id="productQuantity" class="form-control form-control-lg" placeholder="Quantity" formControlName="quantity">
     </div>
     <div class="col-10 d-grid">
         <button class="btn btn-lg btn-primary" type="submit">Submit</button>
-
     </div>
-
-
 </form>
