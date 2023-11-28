@@ -11,7 +11,7 @@ export class OrderService {
 
   constructor(private fb:FormBuilder, private http: HttpClient) { }
   
-  readonly baseURL = 'https://store-management-system-y5ye.onrender.com/api/orders:id';
+  readonly baseURL = 'https://store-management-system-y5ye.onrender.com/api/orders';
   list: Order[] = [];
 
     orderForm = this.fb.group({
