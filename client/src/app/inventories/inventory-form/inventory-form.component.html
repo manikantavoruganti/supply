@@ -1,49 +1,56 @@
-<form class="row" [formGroup]="inventory_service.inventoryForm" (submit)="onSubmit()" [class.submitted]="submitted" netlify>
+<form class="row" [formGroup]="inventory_service.inventoryForm" (submit)="onSubmit()" [class.submitted]="submitted">
 
+ <!-- Product Name -->
     <div class="col-10 mb-3">
-        <label for="" class="form-label">PRODDUCT NAME</label>
-        <input class="form-control form-control-lg" placeholder="product name"
-        formControlName="productName">
+        <label for="productName" class="form-label">PRODUCT NAME</label>
+        <input id="productName" class="form-control form-control-lg" placeholder="Enter product name" formControlName="productName">
     </div>
+
+    <!-- Description -->
     <div class="col-10 mb-3">
-        <label for="" class="form-label">DESCRIPTION</label>
-        <input class="form-control form-control-lg" placeholder="What type of product?"
-        formControlName="description">
+        <label for="description" class="form-label">DESCRIPTION</label>
+        <input id="description" class="form-control form-control-lg" placeholder="What type of product?" formControlName="description">
     </div>
+
+    <!-- Quantity -->
     <div class="col-10 mb-3">
-        <label for="" class="form-label">QUANTITY</label>
-        <input class="form-control form-control-lg" placeholder="amount in store"
-        formControlName="quantity">
+        <label for="quantity" class="form-label">QUANTITY</label>
+        <input id="quantity" class="form-control form-control-lg" placeholder="Enter amount in store" formControlName="quantity">
     </div>
+
+    <!-- Price -->
     <div class="col-5 mb-3">
-        <label for="" class="form-label">PRICE</label>
-        <input class="form-control form-control-lg" placeholder="cost per item"
-        formControlName="price">
+        <label for="price" class="form-label">PRICE</label>
+        <input id="price" class="form-control form-control-lg" placeholder="Enter cost per item" formControlName="price">
     </div>
+
+    <!-- Supplier Name -->
     <div class="col-5 mb-3">
-        <label for="" class="form-label">SUPPLIER</label>
-        <input class="form-control form-control-lg" placeholder="supplying company"
-        formControlName="supplierName">
+        <label for="supplierName" class="form-label">SUPPLIER</label>
+        <input id="supplierName" class="form-control form-control-lg" placeholder="Enter supplying company" formControlName="supplierName">
     </div>
+
+    <!-- Manufacturing Date -->
     <div class="col-5 mb-3">
-        <label for="" class="form-label">DATE MANUFACTURED</label>
-        <input class="form-control form-control-lg" placeholder="when was it made"
-        formControlName="manufacturingDate">
+        <label for="manufacturingDate" class="form-label">DATE MANUFACTURED</label>
+        <input id="manufacturingDate" class="form-control form-control-lg" placeholder="Enter manufacturing date" formControlName="manufacturingDate">
     </div>
+
+    <!-- Expiry Date -->
     <div class="col-5 mb-3">
-        <label for="" class="form-label">EXPIRY DATE</label>
-        <input class="form-control form-control-lg" placeholder="expiry"
-        formControlName="expiryDate">
+        <label for="expiryDate" class="form-label">EXPIRY DATE</label>
+        <input id="expiryDate" class="form-control form-control-lg" placeholder="Enter expiry date" formControlName="expiryDate">
     </div>
+
+    <!-- Location -->
     <div class="col-5 mb-3">
-        <label for="" class="form-label">LOCATION IT'S STORED</label>
-        <input class="form-control form-control-lg" placeholder="which warehouse has it?"
-        formControlName="location">
+        <label for="location" class="form-label">LOCATION IT'S STORED</label>
+        <input id="location" class="form-control form-control-lg" placeholder="Enter warehouse location" formControlName="location">
     </div>
+
+    <!-- Submit Button -->
     <div class="col-10 d-grid">
         <button class="btn btn-lg btn-primary" type="submit">SUBMIT</button>
-
     </div>
-
 
 </form>
